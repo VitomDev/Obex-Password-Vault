@@ -1,0 +1,32 @@
+#include <windows.h>
+#include "resource.h"
+#include "../version.h"
+
+IDI_OBEX ICON "../../assets/obex.ico"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "Obex.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION OBEX_VERSION_MAJOR, OBEX_VERSION_MINOR, OBEX_VERSION_PATCH, 0
+PRODUCTVERSION OBEX_VERSION_MAJOR, OBEX_VERSION_MINOR, OBEX_VERSION_PATCH, 0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "VitomDev"
+            VALUE "FileDescription", "Obex Password Vault"
+            VALUE "FileVersion", OBEX_VERSION_STRING
+            VALUE "InternalName", "Obex"
+            VALUE "LegalCopyright", "Copyright (c) 2026 VitomDev. MIT License."
+            VALUE "OriginalFilename", "Obex.exe"
+            VALUE "ProductName", "Obex Password Vault"
+            VALUE "ProductVersion", OBEX_VERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

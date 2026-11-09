@@ -1,0 +1,16 @@
+{
+  "appId": "{28D2F73F-EC91-4998-BF7A-0513857BB5C3}",
+  "name": "Obex Password Vault",
+  "category": "Security",
+  "icon": "assets/obex.png",
+  "screenshots": [
+    "assets/screenshots/screenshot-1.png",
+    "assets/screenshots/screenshot-2.png"
+  ],
+  "installer": "ObexSetup.exe",
+  "exe": "Obex.exe",
+  "settings": [
+    "%LOCALAPPDATA%\\Obex Password Vault",
+    "HKCU\\Software\\Obex Password Vault"
+  ]
+}
