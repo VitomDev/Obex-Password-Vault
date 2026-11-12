@@ -43,6 +43,7 @@ add_executable(Obex WIN32
     src/app/Obex.rc
 )
 target_link_libraries(Obex PRIVATE obexcore gdi32 comctl32 comdlg32 dwmapi uxtheme wtsapi32)
+set_source_files_properties(src/app/Obex.rc PROPERTIES OBJECT_DEPENDS "${CMAKE_SOURCE_DIR}/src/version.h;${CMAKE_SOURCE_DIR}/src/app/Obex.manifest;${CMAKE_SOURCE_DIR}/assets/obex.ico")
 # The manifest is embedded through Obex.rc.
 target_link_options(Obex PRIVATE /MANIFEST:NO)
 

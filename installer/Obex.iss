@@ -7,7 +7,7 @@
 ;
 ; Built by build.ps1, which passes /DBuildDir=<folder with Obex.exe>.
 
-#define AppVersion "1.0.0"
+#define AppVersion "1.0.1"
 #define AppName "Obex Password Vault"
 #define RunKey "Software\Microsoft\Windows\CurrentVersion\Run"
 #define StartupApprovedKey "Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run"
