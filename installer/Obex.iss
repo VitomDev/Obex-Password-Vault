@@ -7,7 +7,7 @@
 ;
 ; Built by build.ps1, which passes /DBuildDir=<folder with Obex.exe>.
 
-#define AppVersion "1.0.1"
+#define AppVersion "1.0.2"
 #define AppName "Obex Password Vault"
 #define RunKey "Software\Microsoft\Windows\CurrentVersion\Run"
 #define StartupApprovedKey "Software\Microsoft\Windows\CurrentVersion\Explorer\StartupApproved\Run"
@@ -46,6 +46,10 @@ WizardStyle=modern
 LicenseFile=..\LICENSE
 ; Obex is closed by the code below, through its own window.
 CloseApplications=no
+
+[Messages]
+; Shown above the license on the wizard's license page.
+LicenseLabel3=Obex is free and open source. If you paid for it, you were scammed: the official download is only at github.com/VitomDev. Please read the license below and accept it to continue.
 
 [Files]
 Source: "{#BuildDir}\Obex.exe"; DestDir: "{app}"; Flags: ignoreversion

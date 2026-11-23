@@ -183,7 +183,7 @@ void SettingsPanel::Layout() {
 
     const int bottom = Height() - S(36);
     if (!status_.empty()) AddText({pad, bottom - S(28), Width() - pad, bottom - S(4)}, status_, statusError_ ? TextKind::Error : TextKind::Success);
-    AddText({pad, bottom, Width() - pad, bottom + S(24)}, L"Obex Password Vault " OBEX_VERSION_STRING L" · VitomDev", TextKind::Hint);
+    AddText({pad, bottom, Width() - pad, bottom + S(24)}, L"Obex Password Vault " OBEX_VERSION_STRING L" · VitomDev · Free and open source", TextKind::Hint);
     EnableWindow(Item(kMasterEvery), hello_);
 }
 
